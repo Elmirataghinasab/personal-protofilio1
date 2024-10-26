@@ -1,0 +1,66 @@
+#container{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+.prg{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+.skillbars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+.skillbar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(4, 4, 4);
+}
+.icon{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+.prgrph{
+    font-size: 0.9rem;
+    font-weight: 200;
+
+}
+/*in smaller size we want all of the skills fit in sc together*/
+@media screen and (max-width:720px){
+    .expl>p{
+        font-size: 2vw;
+    }
+    
+}
+@media screen and (max-width:480px){
+    .expl>p{
+        font-size: 3vw;
+    }
+    .icon{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .expl>.head{
+        font-size: 5vw;
+    }
+}
